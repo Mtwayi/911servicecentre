@@ -1,0 +1,38 @@
+.portfolioFilter {
+  	ul {
+  		list-style-type: none;
+    	padding-left: 0;
+  		display: inline-block;
+  		text-align: center;
+  		width: 100%;
+  		li {
+  			float: left;
+  			width: 20%;
+  			display: inline-block;
+  			@media (max-width: 767px) {
+  				width: 100%;
+    		}
+  			a {
+			  	color: $brand-grey2;
+			    text-decoration: none;
+			    display: inline-block;
+			    background: #ebebeb;
+			    width: 100%;
+			    font-size: 19px;
+    			font-weight: 400;
+			    padding: 1.3em .5em;
+			    border-bottom: 5px solid #cccccc;
+			    &.current,
+			    &:focus,
+				&:hover,
+				&:active {
+			    	background: $brand-red;
+			    	color: $brand-white;
+			    	text-decoration: none;
+			    	border-color: #b40505;
+			    }
+  			}
+  		}
+	}
+}
+

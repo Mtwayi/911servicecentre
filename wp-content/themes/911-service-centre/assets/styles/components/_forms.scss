@@ -1,0 +1,290 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+
+
+.gform_wrapper {
+    margin: 0 !important;
+    max-width: 100% !important;
+    .gform_heading {
+    	width: 100% !important;
+    }
+    .validation_error {
+		color: $brand-red !important;
+		border-color: $brand-red !important;
+    	padding: 15px !important;
+    	width: 100% !important;
+    	font-family: Work Sans,sans-serif!important;
+	    font-weight: 500 !important;
+	    line-height: 1.2em;
+	}
+    .gform_body {
+		ul {
+			list-style-type: none;
+		    margin: 0;
+		    padding-left: 0px;
+			li {
+				&.gfield_error {
+					background-color: transparent !important;
+				    border: none !important;
+				    width: 45.8% !important;
+				    margin: 0 15px !important;
+				    @media (max-width: 991px) {
+				    	margin: 0!important;
+					    padding-right: 15px !important;;
+					    padding-left: 15px !important;;
+				    }
+				    padding-bottom: 5px;
+				    .ginput_container {
+				    	max-width: 100% !important;
+					    margin: 0 !important;
+					    padding: 0 !important;
+					    input, select, textarea {
+					    	margin-bottom: 0px !important;
+					        border: 1px solid $brand-red !important;
+					    }
+				    }
+				    .validation_message {
+				    	max-width: 100% !important;
+    					padding: 0px !important;
+				    }
+				    &.col-md-12 {
+				    	width: 96% !important;
+				    	@media (max-width: 991px) {
+					    	width: 100% !important;
+					    }
+				    }
+				}
+				margin-bottom: 1.5em;
+			    clear: none;
+				label {
+					display: none !important;
+				}
+				.ginput_container {
+					margin: 0 !important;
+				}
+			    input, select, textarea {
+			    	font-family: Work Sans,sans-serif !important;
+				    line-height: inherit;
+				    width: 100% !important;
+				    font-weight: 400;
+				    font-size: 14px;
+				    padding: 12px 20px;
+				    border: 1px solid #f6f5f5;
+				    background-color: #f6f5f5;
+				    border-radius: 2px;
+				    color: #8a8a8a;
+				}
+				.validation_message {
+					color: $brand-red;
+				}
+			}
+		}
+	}
+	.gform_footer {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container, .gform_wrapper li.gfield.gfield_error.gfield_contains_required fieldset legend.gfield_label, .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+   	margin: 0px !important;
+    width: 100% !important;
+   	font-family: Work Sans,sans-serif!important;
+    font-weight: 500;
+}
+
+.write-review {
+	.gform_heading {
+		.gform_title {
+			@extend .global-heading;
+			color: $brand-black;
+			font-size: 30px;
+		    margin: 0 15px 1em 15px;
+		    @media (max-width: 991px) {
+		    	// margin: 0 !important;
+		    }
+		}
+	}
+	.gform_body {
+		ul {
+			li {
+				&.start-rating {
+				    display: inline-block;
+					label {
+						display: block !important;
+						font-family: Work Sans,sans-serif !important;
+					    font-weight: 400;
+					    font-size: 20px;
+					    color: #8a8a8a;
+					    margin: 0 10px 0 0;
+					    float: left;
+					}
+					.ginput_container {
+						margin: 0px;
+						display: inline-block;
+					    float: left;
+						.gfield_radio {
+							li {
+								float: left;
+								padding: 4px !important;
+								width: 28px;
+								display: inline-block;
+								font-size: 20px;
+								margin: 0;
+								input { display: none; }
+								label { margin-left: 0 !important; line-height: 1;}
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+				&.gform_validation_container {
+					display: none;
+				}
+			}
+		}
+	}
+	.gform_footer {
+		margin: 0 15px;
+	}
+}
+
+
+.enquire-now_wrapper {
+	background: #e61e2b;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    padding: 2em .5em;
+    form.enquire-now {
+    	.gform_heading,
+	    .gform_footer {
+	    	text-align: center;
+	    }
+    	.gform_heading {
+    		.gform_title {
+    			font-family: Work Sans,sans-serif!important;
+			    font-size: 40px;
+			    line-height: 1.1;
+			   	margin: 0;
+    		}
+    	}
+    	.validation_error {
+    		display: none;
+    	}
+    	.gform_body {
+    		display: inline-block;
+    		ul > li {
+    			margin-bottom: 1em;
+    			&.gfield_error {
+    				width: 43%!important;
+    			    margin-bottom: 0.3em!important;
+    				&.interested {
+    					width: 93%!important;
+    				}
+    				.validation_message {
+    					padding-right: 0px!important;
+    					color: #fff;
+    				    font-size: 12px;
+						line-height: 1;
+    				}
+    			}
+    			.ginput_container {
+    				input, select {
+    					padding: 12px 5px;
+    				}
+    			}
+    		}
+	    	@media (max-width: 1199px) {
+	    		ul > li {
+	    			&.gfield_error {
+	    				width: 41%!important;
+	    				&.interested {
+	    					width: 90.2%!important;
+	    				}
+	    			}
+	    		}
+	    	}
+	    	@media (max-width: 991px) {
+	    		ul > li {
+	    			padding-left: 5px !important;
+    				padding-right: 5px !important;
+	    			&.gfield_error {
+	    				width: 50%!important;
+	    				&.interested {
+	    					width: 100%!important;
+	    				}
+	    				.validation_message {
+	    				    font-size: 11px;
+	    				}
+	    			}
+	    		}
+	    	}
+	    	@media (max-width: 767px) {
+	    		ul > li {
+	    			&.gfield_error {
+	    				width: 100%!important;
+	    			}
+	    		}
+	    	}
+	    }
+    }
+    @media (max-width: 767px) {
+    	position: relative;
+	}
+    @media (max-width: 1366px) {
+		padding: 1em .5em;    	
+	}
+}
+
+i.fa.fa-star { color: #e61e2b; }
+i.fa.fa-star-o { color: #e61e2b; }
+
+
+/* Center Model Dialog */
+#ReviewModal .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) !important;
+    transform: translateX(-50%) translateY(-50%) !important;
+    width: 100%;
+    margin: 0;
+    .modal-content {
+    	@media (max-width: 575px) {
+            margin: 0 29px 0 15px;
+        }
+        .close {
+            z-index: 2;
+            position: relative;
+            text-align: right;
+            padding: 15px 20px 0 0;
+            opacity: 1;
+            &:hover {
+                opacity: .5;
+            }
+        }
+        .modal-body {
+        	padding: 20px 40px 40px 40px;
+        	@media (max-width: 575px) {
+	            padding: 20px 15px 30px;
+	        }
+        }
+    }
+}

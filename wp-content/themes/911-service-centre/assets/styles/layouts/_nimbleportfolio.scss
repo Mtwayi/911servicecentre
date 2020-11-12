@@ -1,0 +1,44 @@
+.nimble-portfolio {
+	margin-bottom: 1em;
+	.-filters  {
+		text-align: center;
+		margin-bottom: 2em;
+		a {
+			color: $brand-primary;
+			font-weight: 500;
+			font-size: 1rem;
+			&.-filter {
+    			border: none;
+				&.active {
+					background: transparent;
+    				color: $brand-red;
+    				border-bottom: 2px solid $brand-red;
+    				padding-bottom: 0px;
+				}
+			}
+			&:hover {
+				color: $brand-red;
+				border-bottom: 2px solid $brand-red;
+				padding-bottom: 0px;
+			}
+		}
+	}
+	.-items  {
+		.-item {
+		    margin: 0 !important;
+    		width: 33.33333% !important;
+    		padding: 15px;
+			.title {
+				display: none;
+			}
+			.itembox {
+				width: 100% !important;
+			    border: none !important;
+			    height: auto !important;
+			    padding-bottom: 0 !important;
+			    box-shadow: none !important;
+			   	background: transparent !important;
+			}
+		}
+	}
+}
